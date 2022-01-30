@@ -53,7 +53,7 @@ const quickStart = async (list, prefix) => {
     });
   
     const writeFile = util.promisify(fs.writeFile);
-    await writeFile(`./audio/audio-${prefix}-${index}.mp3`, response.audioContent, 'binary');
+    await writeFile(`./data/audio-${prefix}-${index}.mp3`, response.audioContent, 'binary');
   });
 
   console.log('Writing new audio files');
